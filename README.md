@@ -6,5 +6,11 @@
 ##### 2. [비디오 게임 출고량 데이터 분석](https://github.com/JeongwooLee1124/Data-Analytics-Project/tree/main/Video%20Game%20Analysis)
 *  1980~2016년까지의 비디오 게임 출고량 데이터를 시각화를 통해 분석해보고 앞으로 어떤 게임을 출시하는 것이 게임 시장에 유리한지 결과 도출
 
-##### 3. [직원 퇴사(퇴직/이직) 예측 모델 수립](https://github.com/JeongwooLee1124/Data-Analytics-Project/tree/main/Employee%20Attrition%20Classification)
+##### 3. [직원 퇴사(퇴직/이직) 예측 ](https://github.com/JeongwooLee1124/Data-Analytics-Project/tree/main/Employee%20Attrition%20Classification)
 * 기업의 인적 자원 데이터를 가지고 직원들이 회사를 떠나는 원인 분석 및 직원들의 퇴사 가능성을 예측하는 모델 생성
+
+##### 4. [기업 리뷰 데이터 감성 분석 ](https://github.com/JeongwooLee1124/NLP_Sentiment_Analysis_Project)
+* 잡플래닛의 기업 리뷰 데이터를 긍정, 부정으로 분류해주는 딥러닝 모델 생성
+
+##### 5. [Face2Comic with Pix2Pix ](https://github.com/JeongwooLee1124/Pix2Pix_Face2Comic)
+* 실제 얼굴 이미지를 미국 만화 캐릭터처럼 변환 시켜주는 Pix2Pix 기반의 딥러닝 모델 생성
