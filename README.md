@@ -1,4 +1,4 @@
-# Data Analytics Projects
+# Data Analytics & Machine Learning Projects
 데이터 분석, 머신러닝을 공부하면서 진행했던 프로젝트들 입니다.
 
 ##### 1. [생체 광학 데이터 AI 분석](https://github.com/JeongwooLee1124/Data-Analytics-Project/tree/main/%EC%83%9D%EC%B2%B4%20%EA%B4%91%ED%95%99%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D)
