@@ -1,7 +1,8 @@
-# *HR Analytics Project*
-### *직원 퇴사(퇴직/이직) 예측 모델 수립*
+# :memo: HR Analytics Project (직원 이탈 예측)
 
-#### Project Description
+## Project Description
+![image](https://user-images.githubusercontent.com/68156494/136099419-d4913b15-4902-4de0-88da-c10801e97e73.png)
+
 직원들의 이탈은 회사 차원에서 손실과 비용이 따르는 위험요인이기에 우리의 고용주들은 누가 회사를 나갈 생각인지 알고 싶어합니다.
 
 빡빡한 노동시장에서 직원 이직 또는 퇴직으로 발생하는 비용이 커지면서 기업들은 퇴사 가능성이 있는 직원을 파악하기 위해 재직 기간, 자택 위치, 인사고과, 직원 설문조사, 심지어 성격 검사까지 다양한 요인들을 분석하고 있습니다.
@@ -9,16 +10,42 @@
 이번 저의 프로젝트에서는 기업의 인적 자원 데이터를 가지고
 직원들이 회사를 떠나는 이유가 무엇인지 알아보고 직접 직원들의 퇴사 가능성을 예측하는 모델을 만들어 봤습니다.
 
-#### Data
-Kaggle(IBM HR Analytics Employee Attrition & Performance)
+## Data
 
-#### Model
+#### 데이터셋 : Kaggle(IBM HR Analytics Employee Attrition & Performance)
+  *  기본 정보 (29개)
+  *  만족도 설문조사 (5개)
+
+#### Target :  **'Attrition'**(퇴사 여부)
+
+<img src="https://user-images.githubusercontent.com/68156494/136101264-cf46c91f-3e74-46a0-817d-561f2028f49c.png" width="70%" height="80%">
+
+타겟 클래스의 분포를 확인 결과 퇴사한 직원이 16.12%, 재직중인 직원이 83.88%으로 상당히 불균형한 데이터입니다.
+
+이 데이터를 가지고 학습할 경우 모델의 예측 결과에서 발생할 수 있는 오류의 종류는 2개 입니다.
+
+1. 모델은 퇴사를 예측했지만 실제로는 직원이 퇴사를 하지 않은 경우
+
+2. 모델은 퇴사를 하지 않을 것을 예측했지만 실제로는 직원이 퇴사를 하는 경우 입니다.
+
+우리의 목표는 떠나는 직원을 예측하여 이를 방지하거나 대비하는 것이므로 두 번째의 경우가 더 큰 손실입니다.
+
+따라서 이번 프로젝트에서는 False Negative를 줄이기 위해 Accuracy(정확도)뿐만 아니라 퇴직자를 대상으로 하는 recall(재현율)와 AUC(Area Under Curve) 점수를 모델의 평가지표로 사용할 것 입니다.
+
+## Model
 * RandomForestClassifier
 * LGBMClassifier
-* XGBBClassifier
+* XGBClassifier
 * CatBoostClassifier
 
-#### Conclusion
+|Model|Accuracy|AUC-ROC|Recall|Best|
+|:--:|:--:|:--:|:--:|:--:|
+|XGBoost|0.864|0.807|0.37||
+|LightGBM|0.873|0.807|0.39|:white_check_mark:|
+|CatBoost|0.847|0.810|0.05||
+|randomforest|0.860|0.787|0.34||
+
+## Conclusion
 1. 의의
 * 인사 자원 부서가 가진 직원의 기본 정보와 만족도 조사 데이터를 활용하여 직원들의 이탈을 예측할 수 있습니다.
 * 예측 모델을 이용하여 이직이나 퇴직이 예상되는 직원들을 집중적으로 관리하고 방지하여 그로 인해 발생하는 회사의 손실을 최소화 시킬 수 있습니다.
