@@ -1,7 +1,7 @@
 # Deep Learning Projects
 딥러닝을 공부하면서 진행했던 프로젝트들 입니다.
 
-##### 1. [인공지능 기반의 개선된 주차관제시스템 개발](https://github.com/JeongwooLee1124/Fake_Number_Plate_Detection)
+##### 1. [인공지능 기반의 개선된 주차관제시스템 개발](https://github.com/JeongwooLee1124/Fake_Number_Plate_Detection.)
 * 기존 주차관제시스템이 위조번호판 부착 차량을 판별하지 못하는 문제를 해결하기 위해 딥러닝과 컴퓨터 비전 기술을 적용한 개선된 시스템 개발
 * 논문 : [위조번호판 부착 차량 출입 방지를 위한
 인공지능 기반의 주차관제시스템 개선 방안](http://jiisonline.evehost.co.kr/files/DLA/20220706204808_04_%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%E1%84%86%E1%85%B5%E1%86%AB,%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE,%E1%84%87%E1%85%A1%E1%86%A8%E1%84%8C%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A7%E1%86%A8.pdf)
